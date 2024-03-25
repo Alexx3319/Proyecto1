@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <title>Juegos FF - Home Page</title>
+    <style>
+        
+        .categoria {
+            width: 20%;
+        }
+        .categoria a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* para ajustar tamaño de las imagenes */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Categorias</h1> <!-- encabezado principal centrado -->
+    </header> 
+
+   <!-- boton que sirve para redirigir al InicioSesion.html -->
+   <div class="container mb-4 text-center"> <!-- Para centrar -->
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-4">
+            <a href="InicioSesion.html" class="btn btn-primary btn-sm">Iniciar Sesión</a>
+        </div>
+    </div>
+</div>
+
+<main class="container">
+    <div class="row justify-content-evenly"> <!-- clases de Bootstrap para el diseño -->
+        <div class="col-12 col-md-4 mb-4"> <!-- columna para cada categoría, adaptable para diferentes pantallas como moviles -->
+            <a href="accion.html" class="d-inline-block text-center">
+                <img src="Img/fallout.jpg" alt="Acción" class="img-fluid img-thumbnail ">
+                <span class="d-block mt-2">Acción</span> <!-- Texto de la categoría -->
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <a href="horror.html" class="d-inline-block text-center">
+                <img src="Img/Out.jpg" alt="Horror" class="img-fluid img-thumbnail">
+                <span class="d-block mt-2">Horror</span>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <a href="deportes.html" class="d-inline-block text-center">
+                <img src="Img/gt.jpg" alt="Deportes" class="img-fluid img-thumbnail ">
+                <span class="d-block mt-2">Deportes</span>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <a href="shooters.html" class="d-inline-block text-center">
+                <img src="Img/hal.jpg" alt="Shooters" class="img-fluid img-thumbnail ">
+                <span class="d-block mt-2">Shooters</span>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <a href="aventura.html" class="d-inline-block text-center">
+                <img src="Img/hk.webp" alt="Aventura" class="img-fluid img-thumbnail ">
+                <span class="d-block mt-2">Aventura</span>
+            </a>
+        </div>
+    </div>
+</nav>
+<br/>
+<div class="container"> <!-- formulario de registro de usuario -->
+    <div>
+        <center><h2 class="text-primary"><b>FORMULARIO REGISTRO</b></h2></center>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6"> 
+            <form action="" method="get" name="contacto" id="formulario_registro">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label text-primary">Nombre completo</label>
+                    <input type="text" placeholder="Ingrese su nombre completo" name="nombre" id="nombre" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre_usuario" class="form-label text-primary">Nombre de usuario</label>
+                    <input type="text" placeholder="Ingrese su nombre de usuario" name="nombre_usuario" id="nombre_usuario" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-primary">Correo electrónico</label>
+                    <input type="email" placeholder="Ingrese su correo electrónico" name="email" id="email" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label text-primary">Contraseña</label>
+                    <input type="password" placeholder="Ingrese su contraseña" name="contrasena" id="contrasena" required pattern="(?=.*\d)(?=.*[A-Z]).{6,18}" title="La contraseña debe contener al menos un número y una letra en mayúscula, y tener entre 6 y 18 caracteres." class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmar_contrasena" class="form-label text-primary">Repetir contraseña</label>
+                    <input type="password" placeholder="Repita su contraseña" name="confirmar_contrasena" id="confirmar_contrasena" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="fecha_nacimiento" class="form-label text-primary">Fecha de nacimiento</label>
+                    <input type="date" placeholder="Ingrese su fecha de nacimiento" name="fecha_nacimiento" id="fecha_nacimiento" required class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="direccion_despacho" class="form-label text-primary">Dirección de despacho</label>
+                    <input type="text" placeholder="Ingrese su dirección de despacho (opcional)" name="direccion_despacho" id="direccion_despacho" class="form-control">
+                </div>
+                <br/><br/>
+                <input name="enviar" class="btn btn-primary" value="Enviar" type="submit">
+                <input name="limpiar" class="btn btn-secondary" value="Limpiar" type="reset">
+            </form>
+        </div>   
+    </div>
+</div>       
+
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Juegos FF</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        
+    const formularioDiv = document.getElementById('formulario_registro');
+    const nombreInput = document.getElementById('nombre');
+    const emailInput = document.getElementById('email');
+    const contrasenaInput = document.getElementById('contrasena');
+    const confirmarContrasenaInput = document.getElementById('confirmar_contrasena');
+    const fechaNacimientoInput = document.getElementById('fecha_nacimiento');
+
+    formularioDiv.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // para validar de campos vacíos
+        if (nombreInput.value === '' || emailInput.value === '' || contrasenaInput.value === '' || confirmarContrasenaInput.value === '' || fechaNacimientoInput.value === '') {
+            alert('Por favor complete todos los campos.');
+            return;
+        }
+
+        // validar de formato de correo electrónico
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value)) {
+            alert('Por favor ingrese un correo electrónico válido.');
+            return;
+        }
+
+        // validacion de contraseñas iguales
+        if (contrasenaInput.value !== confirmarContrasenaInput.value) {
+            alert('Las contraseñas no coinciden.');
+            return;
+        }
+
+        // edad mínima con condicional if(13 años)
+        const fechaNacimiento = new Date(fechaNacimientoInput.value);
+        const hoy = new Date();
+        const edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+        const mes = hoy.getMonth() - fechaNacimiento.getMonth();
+        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+            edad--;
+        }
+        if (edad < 13) {
+            alert('Debe tener al menos 13 años para registrarse.');
+            return;
+        }
+
+        // validar de formato de contraseña
+        const contrasenaRegex = /^(?=.*\d)(?=.*[A-Z]).{6,18}$/;
+        if (!contrasenaRegex.test(contrasenaInput.value)) {
+            alert('La contraseña debe contener al menos un número y una letra en mayúscula, y tener entre 6 y 18 caracteres.');
+            return;
+        }
+
+        // submit dado el caso excitoso de los constrains
+        formularioDiv.submit();
+    });
+    </script>
+</body>
+</html>
+
+
+
